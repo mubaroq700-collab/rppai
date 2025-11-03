@@ -1,0 +1,7 @@
+[build]
+  # Perintah ini tidak terlalu penting untuk proyek statis kita, tapi bagus untuk dimiliki
+  command = "echo 'No build command required'"
+
+[functions]
+  # Ini adalah bagian terpenting: memberitahu Netlify lokasi folder functions kita
+  directory = "netlify/functions"

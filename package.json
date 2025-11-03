@@ -1,0 +1,12 @@
+{
+  "name": "buat-rpp-ai",
+  "version": "1.0.0",
+  "description": "Aplikasi pembuat RPP otomatis dengan Gemini AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.14.0"
+  }
+}

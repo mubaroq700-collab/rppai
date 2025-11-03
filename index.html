@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buat RPP AI - Pembuat Rencana Pelaksanaan Pembelajaran Otomatis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>✨ Buat RPP AI</h1>
+      <p>Hasilkan Rencana Pelaksanaan Pembelajaran otomatis dengan bantuan kecerdasan buatan.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <h2>📝 Isi Detail RPP</h2>
+      <form id="form-rpp">
+        <div class="grid-2">
+          <label>
+            <span>Kelas / Semester</span>
+            <input type="text" id="kelas" placeholder="Contoh: V / Ganjil" required>
+          </label>
+          <label>
+            <span>Mata Pelajaran</span>
+            <input type="text" id="mapel" placeholder="Contoh: Matematika" required>
+          </label>
+        </div>
+
+        <label>
+          <span>Materi Pokok</span>
+          <input type="text" id="materi" placeholder="Contoh: Operasi Hitung Penjumlahan" required>
+        </label>
+
+        <label>
+          <span>Topik / Sub Materi</span>
+          <input type="text" id="topik" placeholder="Contoh: Penjumlahan Bilangan Cacah" required>
+        </label>
+
+        <div class="grid-2">
+          <label>
+            <span>Model Pembelajaran</span>
+            <input type="text" id="model" placeholder="Contoh: Problem Based Learning" required>
+          </label>
+          <label>
+            <span>Alokasi Waktu</span>
+            <input type="text" id="waktu" placeholder="Contoh: 1 x 30 menit" required>
+          </label>
+        </div>
+
+        <button type="submit" id="btn-generate" class="btn-primary">🚀 Buat RPP Otomatis</button>
+      </form>
+    </section>
+
+    <section id="result-container" class="card result-card" style="display:none;">
+      <h2>📄 Hasil RPP</h2>
+      <div id="loading" class="loading">Sedang membuat RPP... Mohon tunggu sebentar.</div>
+      <pre id="hasil-rpp"></pre>
+      <div class="result-actions">
+        <button id="btn-copy" class="btn">📋 Salin</button>
+        <a id="btn-download" class="btn" download="RPP.txt">⬇️ Unduh</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Buat RPP AI | Dibuat dengan ❤️ oleh PakGuruKiki</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
